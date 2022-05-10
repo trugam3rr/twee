@@ -1,0 +1,111 @@
+:: QuestSetup_op_quest [nobr quest]
+
+
+
+
+<<run new setup.QuestTemplate(
+'op_quest', /* key */
+"OP Quest", /* Title */
+{ /* Author */
+  name: "trugam3rr",
+  url: "",
+},
+[ /* tags */
+  'money', 
+  'item', 
+  'special', 
+  'contact', 
+],
+1, /* weeks */
+999999, /* expiration weeks */
+{ /* roles */
+},
+{ /* actors */
+  'god': 'subrace_angel', 
+}, 
+[ /* costs */
+  setup.qc.MoneyCustom(1000), 
+], 
+'Quest_op_quest',
+setup.qdiff.easiest1, /* difficulty */
+[ /* outcomes */
+  [ 
+    'Quest_op_questCrit', 
+    [ 
+      setup.qc.MoneyCustom(100000000), 
+      setup.qc.Favor('bank', 100000), 
+      setup.qc.Item(setup.item.healing_potion_greater, 1), 
+      setup.qc.Item(setup.item.potion_trauma_reduce, 1), 
+      setup.qc.Item(setup.item.potion_boon, 1), 
+      setup.qc.Item(setup.item.potion_level_up_advanced, 1), 
+      setup.qc.Item(setup.item.potion_lust, 1), 
+      setup.qc.Item(setup.item.potion_perk_generalist, 1), 
+      setup.qc.Item(setup.item.potion_protection, 1), 
+      setup.qc.Item(setup.item.potion_sanity, 1), 
+      setup.qc.Item(setup.item.potion_purity, 1), 
+      setup.qc.Item(setup.item.potion_life, 1), 
+      setup.qc.Item(setup.item.potion_luck, 1), 
+      setup.qc.Item(setup.item.potion_virginity, 1), 
+      setup.qc.Item(setup.item.potion_combat_boost, 1), 
+      setup.qc.Item(setup.item.potion_brawn_boost, 1), 
+      setup.qc.Item(setup.item.potion_survival_boost, 1), 
+      setup.qc.Item(setup.item.potion_intrigue_boost, 1), 
+      setup.qc.Item(setup.item.potion_slaving_boost, 1), 
+      setup.qc.Item(setup.item.potion_knowledge_boost, 1), 
+      setup.qc.Item(setup.item.potion_social_boost, 1), 
+      setup.qc.Item(setup.item.potion_aid_boost, 1), 
+      setup.qc.Item(setup.item.potion_arcane_boost, 1), 
+      setup.qc.Item(setup.item.potion_sex_boost, 1), 
+      setup.qc.EquipmentDirect('combat_torso_good'), 
+      setup.qc.EquipmentDirect('combat_legs_good'), 
+      setup.qc.EquipmentDirect('combat_feet_good'), 
+      setup.qc.EquipmentDirect('combat_arms_good'), 
+      setup.qc.EquipmentDirect('combat_head_good'), 
+      setup.qc.EquipmentDirect('combat_arms_master'), 
+      setup.qc.EquipmentDirect('combat_weapon_master'), 
+      setup.qc.EquipmentDirect('slaving_torso_good'), 
+      setup.qc.EquipmentDirect('slaving_legs_good'), 
+      setup.qc.EquipmentDirect('slaving_arms_good'), 
+      setup.qc.EquipmentDirect('slaving_rear_good'), 
+      setup.qc.EquipmentDirect('slaving_head_good'), 
+      setup.qc.EquipmentDirect('slaving_rear_master'), 
+      setup.qc.EquipmentDirect('slaving_weapon_master'), 
+      setup.qc.EquipmentDirect('chastity_dick'), 
+      setup.qc.EquipmentDirect('dildogag'), 
+    ], 
+  ], 
+  [ 
+    'Quest_op_questCrit', 
+    [ 
+    ], 
+  ], 
+  [ 
+    'Quest_op_questCrit', 
+    [ 
+    ], 
+  ], 
+  [ 
+    'Quest_op_questCrit', 
+    [ 
+    ], 
+  ], 
+],
+[ /* quest pool and rarity */
+[setup.questpool.recruitment, setup.rarity.legendary],
+], 
+[ /* restrictions */
+], 
+[ /* expiration outcomes */
+
+], 
+)>>
+
+:: Quest_op_quest [nobr]
+Blank.
+
+
+:: Quest_op_questCrit [nobr]
+.
+
+
+
